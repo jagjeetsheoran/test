@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Detail Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-card">
+            <h2>Address Details</h2>
+            <form action="#">
+                <div class="grid-container">
+                    <!-- First Row (Full Name and Email) -->
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+                    </div>
+
+                    <!-- Second Row (Street Address and City) -->
+                    <div class="input-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main St" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Los Angeles" required>
+                    </div>
+
+                    <!-- Third Row (State and Zip Code) -->
+                    <div class="input-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="California" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip" placeholder="90001" required>
+                    </div>
+
+                    <!-- Yes/No Radio Buttons -->
+                    <div class="input-group">
+                        <label for="terms">Do you accept the terms and conditions?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" id="yes" name="terms" value="yes" required>
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" id="no" name="terms" value="no" required>
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Select Box -->
+                    <div class="input-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="glass-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
